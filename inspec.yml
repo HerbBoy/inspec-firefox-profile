@@ -1,0 +1,20 @@
+name: inspec-firefox-profile
+title: Firefox V6R1
+maintainer: Sorrel Paris
+copyright: Sorrel Paris
+copyright_email: you@example.com
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0
+supports:
+  platform: os
+
+inputs:
+  - name: install_dir
+    value: "/usr/lib64/firefox"
+    type: string
+    description: "The installation folder for Mozilla Firefox"
+  - name: firefox_version
+    value: "78.3.0"
+    type: string
+    description: "The expected version of firefox"
